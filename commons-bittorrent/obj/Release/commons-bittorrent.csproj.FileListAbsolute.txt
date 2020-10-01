@@ -1,6 +1,0 @@
-A:\New projects\StreamingTest\commons-bittorrent\bin\Release\commons-bittorrent.dll
-A:\New projects\StreamingTest\commons-bittorrent\bin\Release\commons-bittorrent.pdb
-A:\New projects\StreamingTest\commons-bittorrent\obj\Release\commons-bittorrent.csproj.CoreCompileInputs.cache
-A:\New projects\StreamingTest\commons-bittorrent\obj\Release\commons-bittorrent.dll
-A:\New projects\StreamingTest\commons-bittorrent\obj\Release\commons-bittorrent.pdb
-A:\New projects\StreamingTest\commons-bittorrent\obj\Release\commons-bittorrent.csprojAssemblyReference.cache

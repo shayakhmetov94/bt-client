@@ -1,5 +1,0 @@
-﻿<linker>
-  <assembly fullname="bittorrent-client-webgui.Client">
-    <type fullname="*" required="true" />
-  </assembly>
-</linker>
