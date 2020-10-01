@@ -671,8 +671,8 @@
     },
     "bittorrent-client/1.0.0": {
       "type": "project",
-      "path": "../bittorrent/bittorrent-client.csproj",
-      "msbuildProject": "../bittorrent/bittorrent-client.csproj"
+      "path": "../bittorrent-client/bittorrent-client.csproj",
+      "msbuildProject": "../bittorrent-client/bittorrent-client.csproj"
     },
     "commons-bittorrent/1.0.0": {
       "type": "project",
@@ -724,8 +724,8 @@
       "frameworks": {
         "net461": {
           "projectReferences": {
-            "A:\\New projects\\StreamingTest\\bittorrent\\bittorrent-client.csproj": {
-              "projectPath": "A:\\New projects\\StreamingTest\\bittorrent\\bittorrent-client.csproj"
+            "A:\\New projects\\StreamingTest\\bittorrent-client\\bittorrent-client.csproj": {
+              "projectPath": "A:\\New projects\\StreamingTest\\bittorrent-client\\bittorrent-client.csproj"
             }
           }
         }

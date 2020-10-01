@@ -64,6 +64,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\bittorrent-client\bittorrent-client.csproj">
+      <Project>{29289e52-6dec-4ac4-a994-db5746cfecbd}</Project>
+      <Name>bittorrent-client</Name>
+    </ProjectReference>
     <ProjectReference Include="..\commons-bittorrent\commons-bittorrent.csproj">
       <Project>{428767fa-7aae-4ddb-8a11-ad6bd9b69cb5}</Project>
       <Name>commons-bittorrent</Name>

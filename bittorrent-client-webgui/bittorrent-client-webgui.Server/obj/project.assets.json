@@ -10126,8 +10126,8 @@
     },
     "bittorrent-client/1.0.0": {
       "type": "project",
-      "path": "../../bittorrent/bittorrent-client.csproj",
-      "msbuildProject": "../../bittorrent/bittorrent-client.csproj"
+      "path": "../../bittorrent-client/bittorrent-client.csproj",
+      "msbuildProject": "../../bittorrent-client/bittorrent-client.csproj"
     },
     "bittorrent-client-webgui.Client/1.0.0": {
       "type": "project",

@@ -304,6 +304,25 @@
         }
       }
     },
+    "A:\\New projects\\StreamingTest\\bittorrent-client\\bittorrent-client.csproj": {
+      "restore": {
+        "projectUniqueName": "A:\\New projects\\StreamingTest\\bittorrent-client\\bittorrent-client.csproj",
+        "projectName": "bittorrent-client",
+        "projectPath": "A:\\New projects\\StreamingTest\\bittorrent-client\\bittorrent-client.csproj",
+        "frameworks": {
+          "net46": {
+            "projectReferences": {
+              "A:\\New projects\\StreamingTest\\commons-bittorrent\\commons-bittorrent.csproj": {
+                "projectPath": "A:\\New projects\\StreamingTest\\commons-bittorrent\\commons-bittorrent.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {}
+      }
+    },
     "A:\\New projects\\StreamingTest\\bittorrent-sevice\\bittorrent-sevice.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -330,8 +349,8 @@
         "frameworks": {
           "net461": {
             "projectReferences": {
-              "A:\\New projects\\StreamingTest\\bittorrent\\bittorrent-client.csproj": {
-                "projectPath": "A:\\New projects\\StreamingTest\\bittorrent\\bittorrent-client.csproj"
+              "A:\\New projects\\StreamingTest\\bittorrent-client\\bittorrent-client.csproj": {
+                "projectPath": "A:\\New projects\\StreamingTest\\bittorrent-client\\bittorrent-client.csproj"
               }
             }
           }

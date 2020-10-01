@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/Blazorise" Path="C:\Users\User\.nuget\packages\blazorise\0.8.8.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Bootstrap" Path="C:\Users\User\.nuget\packages\blazorise.bootstrap\0.8.8.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Charts" Path="C:\Users\User\.nuget\packages\blazorise.charts\0.8.8.3\build\..\staticwebassets\" />
+</StaticWebAssets>

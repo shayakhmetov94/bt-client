@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8QC6i6MAXqiwTJ8nGNdhNIOfcAjZeGMcSmYVjgDkHkIf3M8UHHZZUCToT1ZnsIjnOvH7/tvFbnC/kVKgq76law==",
+  "dgSpecHash": "v4s0orPHsBcXsEUbCPLqsRRLGmEG37TWLINzIikU7zIga7ZZkscEaFxGYNsD4VD3oAboQZvrCnV2bAbQvJrdjw==",
   "success": true,
   "projectFilePath": "A:\\New projects\\StreamingTest\\bittorrent-client-webgui\\bittorrent-client-webgui.Server\\bittorrent-client-webgui.Server.csproj",
   "expectedPackageFiles": [
