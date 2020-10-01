@@ -1,0 +1,41 @@
+﻿<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="@GetNavItemClass(0)">
+                <a class="nav-link" @onclick="@(() => ChangeNavItemClass(0))" href="/">Statistics <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="@GetNavItemClass(1)">
+                <a class="nav-link" @onclick="@(() => ChangeNavItemClass(1))" href="Sessions">Sessions</a>
+            </li>
+            <li class="@GetNavItemClass(2)">
+                <a class="nav-link" @onclick="@(() => ChangeNavItemClass(2))" href="#">Downloaded</a>
+            </li>
+            <li class="@GetNavItemClass(3)">
+                <a class="nav-link" @onclick="@(() => ChangeNavItemClass(3))" href="#">DHT</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+@code {
+    private string NavItem => "nav-item";
+    private string NavItemActive => "nav-item active";
+    private int curActiveNavItem = 0;
+
+    private string GetNavItemClass(int idx) {
+        if(curActiveNavItem == idx) {
+            return NavItemActive;
+        }
+
+        return NavItem;
+    }
+
+    private void ChangeNavItemClass(int idx) {
+        curActiveNavItem = idx;
+    }
+
+}

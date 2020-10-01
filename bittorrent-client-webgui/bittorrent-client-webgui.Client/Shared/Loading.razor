@@ -1,0 +1,48 @@
+﻿@using System.Threading;
+
+@if (IsLoaded()) {
+    @ChildContent
+} else {
+    <div style="position:absolute" class="align-self-center">
+        <div class="spinner-border spinner-border-abs-small d-table-cell d-inline-flex" role="status">
+            <span class="sr-only">
+                Loading...
+            </span>
+        </div>
+        @if (takingLongerThanExpected) {
+            <small class="text-muted"> taking longer than expected</small>
+        }
+    </div>
+    
+} 
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public Func<bool> IsLoaded { get; set; }
+
+    [Parameter]
+    public int ExpectedLoadTimeInMillis { get; set; } = 3000;
+
+    bool takingLongerThanExpected = false;
+
+    protected async override Task OnAfterRenderAsync(bool firstRender) {
+        if (!takingLongerThanExpected)
+        {
+            await Task.Run(WaitLoad);
+        }
+    }
+
+    private void WaitLoad() {
+        //Thread.Sleep(ExpectedLoadTimeInMillis);
+
+        if (IsLoaded()) {
+            return;
+        }
+
+        takingLongerThanExpected = true;
+        StateHasChanged();
+    }
+}

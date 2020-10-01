@@ -1,0 +1,101 @@
+﻿@page "/"
+@using bittorrent_client_webgui.Shared
+@using Blazorise.Charts;
+@inject HttpClient Http
+
+<div class="d-table mx-4">
+    <p class="text-justify d-table-cell">Active sessions:</p>
+    <Loading isLoaded="@((Func<bool>)IsStatsLoaded)">
+        <text>@stats.ActiveSessionsCount</text>
+    </Loading>
+    <div class="d-table-row" />
+    <p class="text-justify d-table-cell">Total sessions:</p>
+    <Loading isLoaded="@((Func<bool>)IsStatsLoaded)">
+        <text>@stats.SessionsCount</text>
+    </Loading>
+</div>
+
+<div class="row">
+    <div class="col-sm h-100 w-100 m d-flex justify-content-center m-4">
+        <LineChart @ref="avgUploadSpeedChart" TItem="double" Style="" />
+        <Loading isLoaded="@((Func<bool>)IsStatsLoaded)" />
+    </div>
+    <div class="col-sm h-100 w-100 px-2 d-flex justify-content-center m-4">
+        <LineChart @ref="avgDownloadSpeedChart" TItem="double" Style="" />
+        <Loading isLoaded="@((Func<bool>)IsStatsLoaded)" />
+    </div>
+</div>
+
+@code {
+    private LineChart<double> avgDownloadSpeedChart;
+    private LineChart<double> avgUploadSpeedChart;
+    private ServerStats stats;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await Task.WhenAll(DrawCharts());
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        stats = await Http.GetJsonAsync<ServerStats>("api/Stats");
+        StateHasChanged();
+    }
+
+    bool IsStatsLoaded()
+    {
+        return stats != null;
+    }
+
+    private Task[] DrawCharts()
+    {
+        List<Task> tasks = new List<Task>(2);
+        bool isStatsLoaded = IsStatsLoaded();
+        if (avgDownloadSpeedChart != null)
+        {
+            tasks.Add(
+                DrawLineChart(avgDownloadSpeedChart, "Download",
+                    isStatsLoaded ? stats.AverageDownloadSpeed.Select((s) => s.UtcTime.ToShortDateString()).ToArray() : null,
+                    isStatsLoaded ? stats.AverageDownloadSpeed.Select((s) => s.Value).ToArray() : null
+                )
+            );
+        }
+
+        if (avgUploadSpeedChart != null)
+        {
+            tasks.Add(
+                DrawLineChart(avgUploadSpeedChart, "Upload",
+                    isStatsLoaded ? stats.AverageUploadSpeed.Select((s) => s.UtcTime.ToShortDateString()).ToArray() : null,
+                    isStatsLoaded ? stats.AverageUploadSpeed.Select((s) => s.Value).ToArray() : null
+                )
+            );
+        }
+
+        return tasks.ToArray();
+    }
+
+    async Task DrawLineChart(LineChart<double> chart, string chartLabel = "", string[] dataLabels = null, double[] data = null)
+    {
+        chart.Clear();
+        chart.AddLabel(dataLabels != null ? dataLabels : new string[0]);
+        chart.AddDataSet(CreateChartDataSet(chartLabel, data));
+
+        await chart.Update();
+    }
+    LineChartDataset<double> CreateChartDataSet(string label = "", double[] data = null)
+    {
+        return new LineChartDataset<double>
+        {
+            Label = label,
+            Data = new List<double>(data != null ? data : new double[0]),
+            BackgroundColor = backgroundColors,
+            BorderColor = borderColors,
+            Fill = true,
+            PointRadius = 2,
+            BorderDash = new List<int> { }
+        };
+    }
+
+    List<string> backgroundColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 0.2f), ChartColor.FromRgba(54, 162, 235, 0.2f), ChartColor.FromRgba(255, 206, 86, 0.2f), ChartColor.FromRgba(75, 192, 192, 0.2f), ChartColor.FromRgba(153, 102, 255, 0.2f), ChartColor.FromRgba(255, 159, 64, 0.2f) };
+    List<string> borderColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 1f), ChartColor.FromRgba(54, 162, 235, 1f), ChartColor.FromRgba(255, 206, 86, 1f), ChartColor.FromRgba(75, 192, 192, 1f), ChartColor.FromRgba(153, 102, 255, 1f), ChartColor.FromRgba(255, 159, 64, 1f) };
+}
