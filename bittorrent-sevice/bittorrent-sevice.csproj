@@ -49,6 +49,6 @@
     <EmbeddedResource Remove="Exceptions.en.resx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StreamingTest\bittorrent-client.csproj" />
+    <ProjectReference Include="..\bittorrent\bittorrent-client.csproj" />
   </ItemGroup>
 </Project>

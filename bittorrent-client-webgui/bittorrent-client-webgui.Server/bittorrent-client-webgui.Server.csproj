@@ -45,9 +45,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\bittorrent-sevice\bittorrent-sevice.csproj">
-      <Private>true</Private>
-    </ProjectReference>
+    <ProjectReference Include="..\..\bittorrent-sevice\bittorrent-sevice.csproj" />
+    <ProjectReference Include="..\..\bittorrent\bittorrent-client.csproj" />
     <ProjectReference Include="..\bittorrent-client-webgui.Client\bittorrent-client-webgui.Client.csproj" />
     <ProjectReference Include="..\bittorrent-client-webgui.Shared\bittorrent-client-webgui.Shared.csproj" />
   </ItemGroup>

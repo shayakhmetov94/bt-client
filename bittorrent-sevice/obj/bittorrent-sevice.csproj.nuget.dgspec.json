@@ -1,0 +1,119 @@
+{
+  "format": 1,
+  "restore": {
+    "A:\\New projects\\StreamingTest\\bittorrent-sevice\\bittorrent-sevice.csproj": {}
+  },
+  "projects": {
+    "A:\\New projects\\StreamingTest\\bittorrent-sevice\\bittorrent-sevice.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "A:\\New projects\\StreamingTest\\bittorrent-sevice\\bittorrent-sevice.csproj",
+        "projectName": "bittorrent-sevice",
+        "projectPath": "A:\\New projects\\StreamingTest\\bittorrent-sevice\\bittorrent-sevice.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "A:\\New projects\\StreamingTest\\bittorrent-sevice\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "A:\\New projects\\StreamingTest\\bittorrent\\bittorrent-client.csproj": {
+                "projectPath": "A:\\New projects\\StreamingTest\\bittorrent\\bittorrent-client.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "Microsoft.CodeAnalysis.VersionCheckAnalyzer": {
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "Microsoft.CodeQuality.Analyzers": {
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "Microsoft.NetCore.Analyzers": {
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "Microsoft.NetFramework.Analyzers": {
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.112, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "A:\\New projects\\StreamingTest\\bittorrent\\bittorrent-client.csproj": {
+      "restore": {
+        "projectUniqueName": "A:\\New projects\\StreamingTest\\bittorrent\\bittorrent-client.csproj",
+        "projectName": "bittorrent-client",
+        "projectPath": "A:\\New projects\\StreamingTest\\bittorrent\\bittorrent-client.csproj",
+        "frameworks": {
+          "net46": {
+            "projectReferences": {
+              "A:\\New projects\\StreamingTest\\commons-bittorrent\\commons-bittorrent.csproj": {
+                "projectPath": "A:\\New projects\\StreamingTest\\commons-bittorrent\\commons-bittorrent.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {}
+      }
+    },
+    "A:\\New projects\\StreamingTest\\commons-bittorrent\\commons-bittorrent.csproj": {
+      "restore": {
+        "projectUniqueName": "A:\\New projects\\StreamingTest\\commons-bittorrent\\commons-bittorrent.csproj",
+        "projectName": "commons-bittorrent",
+        "projectPath": "A:\\New projects\\StreamingTest\\commons-bittorrent\\commons-bittorrent.csproj"
+      },
+      "frameworks": {
+        "net46": {}
+      }
+    }
+  }
+}

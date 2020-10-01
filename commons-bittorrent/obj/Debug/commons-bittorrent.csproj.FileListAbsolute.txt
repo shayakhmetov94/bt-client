@@ -1,0 +1,5 @@
+A:\New projects\StreamingTest\commons-bittorrent\bin\Debug\commons-bittorrent.dll
+A:\New projects\StreamingTest\commons-bittorrent\bin\Debug\commons-bittorrent.pdb
+A:\New projects\StreamingTest\commons-bittorrent\obj\Debug\commons-bittorrent.csproj.CoreCompileInputs.cache
+A:\New projects\StreamingTest\commons-bittorrent\obj\Debug\commons-bittorrent.dll
+A:\New projects\StreamingTest\commons-bittorrent\obj\Debug\commons-bittorrent.pdb

@@ -1,0 +1,8 @@
+A:\New projects\StreamingTest\bittorrent-client-webgui\bittorrent-client-webgui.Shared\bin\Debug\netstandard2.1\bittorrent-client-webgui.Shared.deps.json
+A:\New projects\StreamingTest\bittorrent-client-webgui\bittorrent-client-webgui.Shared\bin\Debug\netstandard2.1\bittorrent-client-webgui.Shared.dll
+A:\New projects\StreamingTest\bittorrent-client-webgui\bittorrent-client-webgui.Shared\bin\Debug\netstandard2.1\bittorrent-client-webgui.Shared.pdb
+A:\New projects\StreamingTest\bittorrent-client-webgui\bittorrent-client-webgui.Shared\obj\Debug\netstandard2.1\bittorrent-client-webgui.Shared.csproj.CoreCompileInputs.cache
+A:\New projects\StreamingTest\bittorrent-client-webgui\bittorrent-client-webgui.Shared\obj\Debug\netstandard2.1\bittorrent-client-webgui.Shared.AssemblyInfoInputs.cache
+A:\New projects\StreamingTest\bittorrent-client-webgui\bittorrent-client-webgui.Shared\obj\Debug\netstandard2.1\bittorrent-client-webgui.Shared.AssemblyInfo.cs
+A:\New projects\StreamingTest\bittorrent-client-webgui\bittorrent-client-webgui.Shared\obj\Debug\netstandard2.1\bittorrent-client-webgui.Shared.dll
+A:\New projects\StreamingTest\bittorrent-client-webgui\bittorrent-client-webgui.Shared\obj\Debug\netstandard2.1\bittorrent-client-webgui.Shared.pdb

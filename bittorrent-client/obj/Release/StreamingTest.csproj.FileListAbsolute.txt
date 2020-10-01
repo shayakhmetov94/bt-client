@@ -1,0 +1,14 @@
+D:\New projects\StreamingTest\StreamingTest\bin\Release\StreamingTest.exe.config
+D:\New projects\StreamingTest\StreamingTest\bin\Release\StreamingTest.exe
+D:\New projects\StreamingTest\StreamingTest\bin\Release\StreamingTest.pdb
+D:\New projects\StreamingTest\StreamingTest\obj\Release\StreamingTest.Properties.Resources.resources
+D:\New projects\StreamingTest\StreamingTest\obj\Release\StreamingTest.csproj.GenerateResource.Cache
+D:\New projects\StreamingTest\StreamingTest\obj\Release\StreamingTest.exe
+D:\New projects\StreamingTest\StreamingTest\obj\Release\StreamingTest.pdb
+D:\New projects\StreamingTest\StreamingTest\obj\Release\StreamingTest.csprojResolveAssemblyReference.cache
+D:\New projects\StreamingTest\StreamingTest\bin\Release\ClassLibrary2.dll
+D:\New projects\StreamingTest\StreamingTest\bin\Release\FluentScheduler.dll
+D:\New projects\StreamingTest\StreamingTest\bin\Release\FluentScheduler.pdb
+D:\New projects\StreamingTest\StreamingTest\bin\Release\FluentScheduler.xml
+D:\New projects\StreamingTest\StreamingTest\bin\Release\ClassLibrary2.xml
+D:\New projects\StreamingTest\StreamingTest\obj\Release\Bittorrent.Form1.resources
